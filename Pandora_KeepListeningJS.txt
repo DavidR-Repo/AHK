@@ -1,3 +1,10 @@
+Start pandora (web page)
+Open page code: 
+	(f12, inspect element, view source, or ???)
+Enter the javascript below into the web page console
+It should work until the page is refreshed
+
+
 javascript:function myMethod( ) { 
 	document.querySelector("button[data-qa='keep_listening_button']").click();
 } 
