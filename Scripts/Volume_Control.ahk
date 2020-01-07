@@ -11,34 +11,34 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; **** Volume Control ****
 ; CTRL  WIN < mouse wheel >
-;		or
 ; CTRL	WIN	< F key >
+; CTRL	WIN	< arrow key >
 
 sm=1
-sm_md=2
 md=5
-lg=10
 
-^#F11::SoundSet,+sm_md
-^#F10::SoundSet,-sm_md
-^#WheelDown::SoundSet,-sm
-^#WheelUp::SoundSet,+1
+^#WheelUp::
+^#F11::
+^#Up::SoundSet,+sm
 
-^#F12::SoundSet,+md
-^#F9::SoundSet,-lg
-^#WheelLeft::SoundSet,-10
-^#WheelRight::SoundSet,+5
+^#WheelDown::
+^#F10::
+^#Down::SoundSet,-sm
 
-^#F8::Volume_Mute
-^#MButton::Volume_Mute
+^#WheelRight::
+^#F12::
+<^>^#Up::SoundSet,+md ;left and right ctrl
+
+^#WheelLeft::
+^#F9::
+<^>^#Down::SoundSet,-md ;left and right ctrl
+
+^#MButton::
+^#F8::
+^#Space::Volume_Mute
 
 
-; **** Virtual Desktop Navigation ****
-; WIN  < mouse L/R >
-; simulates CTRL WIN < arrow key >
 
-#LButton::^#Left
-#RButton::^#Right
 
 
 ;

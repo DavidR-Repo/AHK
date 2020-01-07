@@ -1,0 +1,8 @@
+javascript:function myMethod( ) { 
+	document.querySelector("button[data-qa='keep_listening_button']").click();
+} 
+var miliseconds = 10000;
+var timer = setInterval(myMethod, miliseconds); 
+if(timer) { 
+	alert('Thanks for listening!'); 
+}

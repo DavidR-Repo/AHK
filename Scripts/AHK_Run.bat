@@ -2,7 +2,8 @@
 	TITLE AHK_RUN_
 
 	start Brightness.ahk
-	start AHK_Utilities.ahk
+	start Volume_Control.ahk
+	start Navigate.ahk
 	rem start SpanishAccents.ahk
 	start WebSearch.ahk
 	rem start Backtick_As_Modifier.ahk

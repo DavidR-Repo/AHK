@@ -6,6 +6,13 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance force
 #MaxHotkeysPerInterval 200
 
+; use both control keys (either order)
+;<^RCtrl::
+;>^LCtrl::Send, You did it{!}{Space}
+
+;<^#>^Up::Send, You did it{!}{Space}
+
+
 
 ;
 ;_____________________________

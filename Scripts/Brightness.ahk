@@ -12,23 +12,28 @@ BS := new BrightnessSetter()
 
 ; **** Brightness Control (laptop only) ****
 ; Shift  WIN < mouse wheel >
-;		or
 ; Shift	WIN	< F key >
+; Shift WIN < arrow key >
 
-sm=1
-md=5
-lg=40
+sm=2
+lg=20
 
-+#F11::BS.SetBrightness(+md)
-+#F10::BS.SetBrightness(-md)
-+#WheelUp::BS.SetBrightness(sm)
-+#WheelDown::BS.SetBrightness(-sm)
 
-+#F12::BS.SetBrightness(+lg)
-+#F9::BS.SetBrightness(-lg)
-+#WheelRight::BS.SetBrightness(lg)
-+#WheelLeft::BS.SetBrightness(-lg)
++#WheelUp::
++#F11::
++#Up::BS.SetBrightness(+sm)
 
++#WheelDown::
++#F10::
++#Down::BS.SetBrightness(-sm)
+
++#WheelRight::
++#F12::
++>^#Up::BS.SetBrightness(+lg) ;and right ctrl
+
++#WheelLeft::
++#F9::
++>^#Down::BS.SetBrightness(-lg) ;and right ctrl
 
 
 

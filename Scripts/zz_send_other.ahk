@@ -6,9 +6,13 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
  #singleinstance force
  
  
-^+c::Send {Raw}curry
+;^+c::Send {Raw}curry
  
-^+d::Send {tab}{tab}{tab}{tab}-[DR:{tab}
+;^+d::Send {tab}{tab}{tab}{tab}-[DR:{tab}
+
+; ctrl+shft+c --> command prompt: clear screen
+^+c::Send, cls {enter}
+
  
 ;________________________________________________
 ;___________________Cheat Sheet__________________
