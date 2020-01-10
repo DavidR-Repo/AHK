@@ -16,3 +16,5 @@
 	taskkill /IM deskpins.exe
 	start Deskpins_Shortcut
 @echo on
+
+exit
